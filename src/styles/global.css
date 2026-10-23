@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+/* Pretendard 가변 폰트. 화면에 쓰인 글자 범위의 파일만 내려받음 (dynamic subset) */
+@import 'pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css';
+
+/* 디자인 토큰: bg-primary, text-sub, font-sans 같은 유틸리티로 사용 */
+@theme {
+  --color-primary: #3b5bff;
+  --color-sub: #6b6b6b;
+
+  --font-sans:
+    'Pretendard Variable', 'Pretendard', system-ui, -apple-system, 'Segoe UI',
+    Roboto, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-neutral-900 antialiased;
+  }
+}
