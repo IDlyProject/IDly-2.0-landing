@@ -1,6 +1,5 @@
 import CtaButton from '../CtaButton.tsx'
 
-// 히어로 카드에 보여줄 예시 데이터
 const SUMMARY_ITEMS = [
   { icon: '₩', title: '구독 4개', description: '다음 결제 10월 3일' },
   {
@@ -42,7 +41,6 @@ function Hero() {
           </CtaButton>
         </div>
 
-        {/* 이번 달 구독료 카드 (예시 화면) */}
         <aside className="flex w-full max-w-110 flex-col gap-2.25 rounded-3xl border border-[#edf0f5] bg-white px-6.25 pt-6.25 pb-5.5 drop-shadow-[0_24px_35px_rgba(29,40,72,0.08)] lg:mt-29.5">
           <p className="pt-px pb-0.5 text-xs leading-[15px] text-haze">
             지혜 님의 이번 달 구독료

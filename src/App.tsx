@@ -9,7 +9,6 @@ import Security from './components/sections/Security.tsx'
 import Subscription from './components/sections/Subscription.tsx'
 import Trust from './components/sections/Trust.tsx'
 
-// Figma "L 랜딩 (토스형 · v3에서 채택)" 순서
 function App() {
   return (
     <>

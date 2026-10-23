@@ -1,26 +1,23 @@
 @import 'tailwindcss';
-/* 가변 폰트들. 화면에 쓰인 글자 범위의 파일만 내려받음 */
 @import 'pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css';
 @import '@fontsource-variable/inter';
 @import '@fontsource-variable/noto-sans-kr';
 
-/* 디자인 토큰: bg-ink, text-slate, font-inter 같은 유틸리티로 사용 */
 @theme {
   --color-primary: #3b5bff;
   --color-sub: #6b6b6b;
 
-  --color-navy: #141c3a; /* 헤더 로고 글자 */
-  --color-ink: #171d3d; /* 큰 제목 */
-  --color-slate: #6f7890; /* 본문 설명 */
-  --color-haze: #929bb0; /* 작은 라벨 */
-  --color-muted: #8b95a1; /* 보조 텍스트 */
-  --color-accent: #ff762b; /* 강조 (주황) */
-  --color-button: #191f2a; /* 어두운 버튼 */
+  --color-navy: #141c3a;
+  --color-ink: #171d3d;
+  --color-slate: #6f7890;
+  --color-haze: #929bb0;
+  --color-muted: #8b95a1;
+  --color-accent: #ff762b;
+  --color-button: #191f2a;
 
   --font-sans:
     'Pretendard Variable', 'Pretendard', system-ui, -apple-system, 'Segoe UI',
     Roboto, sans-serif;
-  /* Inter에는 한글이 없어서 Figma처럼 Noto Sans KR로 이어서 표시 */
   --font-inter:
     'Inter Variable', 'Noto Sans KR Variable', system-ui, sans-serif;
   --font-noto: 'Noto Sans KR Variable', system-ui, sans-serif;
@@ -32,7 +29,6 @@
   }
 
   body {
-    /* 한글이 단어 중간에서 줄바꿈되지 않게 */
     @apply bg-white font-sans break-keep text-neutral-900 antialiased;
   }
 }

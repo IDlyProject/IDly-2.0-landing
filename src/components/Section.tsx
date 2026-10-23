@@ -6,7 +6,6 @@ type Props = {
   className?: string
 }
 
-// 섹션 공통 레이아웃: 위아래 여백 + 가운데 정렬 컨테이너
 function Section({ id, children, className = '' }: Props) {
   return (
     <section id={id} className={`py-20 md:py-30 ${className}`}>

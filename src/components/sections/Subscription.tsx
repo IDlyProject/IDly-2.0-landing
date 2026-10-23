@@ -1,4 +1,3 @@
-// 구독 요약 카드에 보여줄 예시 데이터
 const SUBSCRIPTIONS = [
   {
     icon: 'Y',
@@ -28,7 +27,6 @@ function Subscription() {
           </p>
         </div>
 
-        {/* 구독 요약 카드 (예시 화면) */}
         <div className="relative w-full max-w-130 lg:mt-37.5 lg:mr-5">
           <div
             aria-hidden
@@ -67,7 +65,6 @@ function Subscription() {
                 </li>
               ))}
             </ul>
-            {/* 장식용 버튼 (클릭 동작 없음) */}
             <div className="mt-3.5 flex h-14 items-center justify-center rounded-2xl bg-[#0a0e33] px-7 text-[16px] font-bold tracking-normal text-white">
               유튜브 프리미엄 해지 맡기기
             </div>
