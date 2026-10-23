@@ -22,11 +22,13 @@ npm run format   # Prettier (Tailwind 클래스 순서 자동 정렬 포함)
 src/
 ├── App.tsx                  # 섹션을 위→아래 순서로 배치
 ├── main.tsx
-├── constants.ts             # 외부 링크 URL (EXTERNAL_URL)
+├── constants.ts             # 외부 링크: START_URL(시작하기), FOOTER_LINKS(푸터)
 ├── components/
-│   ├── CtaButton.tsx        # 외부 링크로 나가는 버튼 (새 탭)
+│   ├── Header.tsx / Footer.tsx
+│   ├── CtaButton.tsx        # "무료로 시작하기" 버튼 (새 탭)
 │   ├── Section.tsx          # 섹션 공통 여백/컨테이너
-│   └── sections/            # Hero, Features, Cta, Footer …
+│   └── sections/            # Hero → Subscription → Security → Agent
+│                            #   → Pricing → Trust → Faq → FinalCta
 └── styles/global.css        # Tailwind import + @theme 디자인 토큰
 public/                      # favicon, OG 이미지 등 그대로 복사되는 파일
 ```
