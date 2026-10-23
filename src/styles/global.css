@@ -4,9 +4,6 @@
 @import '@fontsource-variable/noto-sans-kr';
 
 @theme {
-  --color-primary: #3b5bff;
-  --color-sub: #6b6b6b;
-
   --color-navy: #141c3a;
   --color-ink: #171d3d;
   --color-slate: #6f7890;
